@@ -1,7 +1,14 @@
 import React from "react";
-import MainImage from "../assets//woman-removebg.png";
-
+import MainImage from "../assets/me.jpg";
 import { BsArrowRight } from "react-icons/bs";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaLinkedin,
+  FaGithub,
+  FaGlobe,
+} from "react-icons/fa";
 
 const HireMe = () => {
   return (
@@ -16,48 +23,62 @@ const HireMe = () => {
               Stay Chill and Tell Your Plan
             </h1>
           </span>
+        </div>
+      </div>
 
-          <div>
-            <img src={MainImage} alt="" className="h-[106%] -mt-8 w-full" />
-          </div>
-          <form
-            action=""
-            className="lg:11/12 flex flex-col lg:gap-6 gap-3 text-white lg:mt-0 mt-12"
-          >
-            <div className="flex lg:gap-6 gap-3 w-full">
-              <label htmlFor="" className="w-full">
-                <input
-                  type="text"
-                  placeholder="Name"
-                  className="bg-[#213516] w-full px-4 h-16 outline-none"
-                />
-              </label>
-              <label htmlFor="" className="w-full">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="bg-[#213516] w-full px-4 h-16 outline-none"
-                />
-              </label>
-            </div>
-            <label htmlFor="" className="w-full">
-              <textarea
-                name=""
-                id=""
-                placeholder="Message..."
-                className="resize-none bg-[#213516] w-full px-4 h-140 outline-none"
-              />
-            </label>
-
-            <div className="pt-4 flex justify-end h-40">
-              <div className="bg-gradient-to-b from-[#3f5125] to-[#364823] rounded-full rounded-b-none lg:h-20 lg:w-40 w-32 h-16 lg:p-8 p-6">
-                <button className="rounded-full bg-[#ff8267] text-[#762f20] lg:h-24 h-20 lg:w-24 w-20 p-4 relative transition ease-out duration-300 transform hover:bg-[#1c2f13]">
-                  <p>Send</p>
-                  <BsArrowRight className="" />
-                </button>
-              </div>
-            </div>
-          </form>
+      {/* Contact Information Section */}
+      <div className="px-3 py-10 lg:flex items-center justify-between gap-8 container mx-auto text-[#c0d6bb]">
+        <div className="w-1/3">
+          <img src={MainImage} alt="" className="h-[106%] mt-8 w-full mb-6" />
+        </div>
+        <div className="lg:w-1/3">
+          <h2 className="lg:text-3xl text-2xl mb-6 ">Contact Information</h2>
+          <ul className="text-lg space-y-4">
+            <li className="flex items-center">
+              <FaEnvelope className="text-[#ff8267] mr-4" />
+              <a
+                href="mailto:your.email@example.com"
+                className="hover:text-[#ff8267] transition-colors duration-300"
+              >
+                Osteevvhoo@gmail
+              </a>
+            </li>
+            <li className="flex items-center">
+              <FaPhone className="text-[#ff8267] mr-4" />
+              <span>+233 559196426</span>
+            </li>
+            <li className="flex items-center">
+              <FaMapMarkerAlt className="text-[#ff8267] mr-4" />
+              <span>Accra, Ghana</span>
+            </li>
+            <li className="flex items-center">
+              <FaGlobe className="text-[#ff8267] mr-4" />
+              <a
+                href="https://yourwebsite.com"
+                className="hover:text-[#ff8267] transition-colors duration-300"
+              >
+                https://lastreetsagesteev.wordpress.com/
+              </a>
+            </li>
+            <li className="flex items-center">
+              <FaLinkedin className="text-[#ff8267] mr-4" />
+              <a
+                href="https://www.linkedin.com/in/stephen-owusu-boakye-ankrah-76944b158/"
+                className="hover:text-[#ff8267] transition-colors duration-300"
+              >
+                LinkedIn Profile
+              </a>
+            </li>
+            <li className="flex items-center">
+              <FaGithub className="text-[#ff8267] mr-4" />
+              <a
+                href="https://github.com/Steev-vhoo"
+                className="hover:text-[#ff8267] transition-colors duration-300"
+              >
+                GitHub Profile
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
